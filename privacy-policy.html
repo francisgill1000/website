@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Eloquent FZE LLC</title>
+    <meta name="description" content="Privacy Policy for Eloquent FZE LLC. Learn how we collect, use, and protect your information.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            50: '#fafafa', 100: '#f4f4f5', 200: '#e4e4e7', 300: '#d4d4d8',
+                            400: '#a1a1aa', 500: '#71717a', 600: '#52525b', 700: '#3f3f46',
+                            800: '#27272a', 900: '#18181b', 950: '#09090b',
+                        },
+                        brand: {
+                            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4',
+                            400: '#00ffcc', 500: '#00e0b3', 600: '#00ad8a',
+                            700: '#0f766e', 800: '#115e59', 900: '#0f3f3a',
+                        },
+                        emerald: {
+                            50: '#ecfdf5', 100: '#d1fae5', 200: '#a7f3d0', 300: '#6ee7b7',
+                            400: '#34d399', 500: '#22c55e', 600: '#16a34a',
+                            700: '#15803d', 800: '#166534', 900: '#14532d',
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%':   { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%':  { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%':  { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(24, 24, 27, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-card {
+            background: rgba(39, 39, 42, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #00ffcc, #00ad8a);
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Policy content typography */
+        .policy h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.01em;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .policy h2 .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.75rem;
+            background: rgba(0, 255, 204, 0.1);
+            color: #00ffcc;
+            border: 1px solid rgba(0, 255, 204, 0.2);
+            font-size: 0.875rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .policy h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e4e4e7;
+            margin-top: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+        .policy p {
+            color: #a1a1aa;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+        .policy ul {
+            list-style: none;
+            margin-bottom: 1rem;
+            padding-left: 0;
+        }
+        .policy ul li {
+            position: relative;
+            padding-left: 1.75rem;
+            color: #a1a1aa;
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+        .policy ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.65rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 9999px;
+            background: #00ffcc;
+            box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+        }
+        .policy a {
+            color: #00ffcc;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(0, 255, 204, 0.4);
+            transition: all 0.2s;
+        }
+        .policy a:hover {
+            color: #ccfbf1;
+            border-bottom-color: #ccfbf1;
+        }
+        .policy strong {
+            color: #e4e4e7;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-[#050505] text-slate-200 font-sans antialiased overflow-x-hidden">
+
+    <!-- Ambient Background Blobs -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-emerald-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-brand-200/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-brand-400 to-brand-600 rounded-xl flex items-center justify-center mr-3 text-slate-900 shadow-lg shadow-brand-400/20 group-hover:scale-105 transition-transform duration-300">
+                        <i class="ph-bold ph-asterisk-simple text-2xl"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tighter text-white">Eloquent</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#services" class="text-sm font-semibold text-slate-400 hover:text-brand-400 transition">Solutions</a>
+                    <a href="index.html#features" class="text-sm font-semibold text-slate-400 hover:text-brand-400 transition">Features</a>
+                    <a href="index.html#pricing" class="text-sm font-semibold text-slate-400 hover:text-brand-400 transition">Pricing</a>
+                    <a href="index.html#contact" class="px-6 py-2.5 bg-brand-500 text-slate-900 font-bold rounded-full hover:shadow-lg hover:shadow-brand-400/20 hover:-translate-y-0.5 transition-all duration-300 text-sm">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center space-x-4">
+                    <a href="index.html" class="text-slate-300 hover:text-white p-2">
+                        <i class="ph ph-arrow-left text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="relative pt-36 pb-16 lg:pt-44 lg:pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="fade-in-up">
+                <div class="inline-flex items-center space-x-2 py-1 px-4 rounded-full glass mb-8 border border-brand-900/50 shadow-sm">
+                    <i class="ph-fill ph-shield-check text-brand-400 text-sm"></i>
+                    <span class="text-slate-300 text-xs font-bold tracking-wide uppercase">Last Updated: May 20, 2026</span>
+                </div>
+
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tighter mb-6 leading-[1.1]">
+                    Privacy <span class="text-gradient">Policy</span>
+                </h1>
+
+                <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-slate-400 font-medium leading-relaxed">
+                    Your trust is the foundation of our service. Here's exactly how we collect, use, and protect your data.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Content -->
+    <section class="pb-32 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card rounded-3xl p-8 md:p-12 lg:p-16 policy">
+
+                <p class="text-slate-300 text-lg leading-relaxed border-l-2 border-brand-500 pl-6 mb-12">
+                    Eloquent FZE LLC ("Eloquent", "we", "us", or "our") operates the Eloquent software suite and related services. This Privacy Policy explains how we handle your information when you use our website, mobile apps, and cloud platform.
+                </p>
+
+                <h2><span class="num">1</span> Information We Collect</h2>
+                <p>To deliver a reliable service, we collect the following categories of information:</p>
+
+                <h3>Account &amp; Contact Information</h3>
+                <ul>
+                    <li>Name, email address, phone number, and company name provided when you sign up or request a demo.</li>
+                    <li>Billing details and authorized signatories for paid subscriptions.</li>
+                </ul>
+
+                <h3>Business Data You Upload</h3>
+                <ul>
+                    <li>Customer records, invoices, quotations, inventory, and sales activity created within the platform.</li>
+                    <li>Documents and attachments you choose to store with us.</li>
+                </ul>
+
+                <h3>Technical &amp; Usage Data</h3>
+                <ul>
+                    <li>Device type, browser, operating system, IP address, and approximate location.</li>
+                    <li>Feature usage, log data, performance metrics, and error reports.</li>
+                    <li>GPS location data — only for the Sales Agent App and Live Map Tracker, and only while the app is in use by your authorized staff.</li>
+                </ul>
+
+                <h2><span class="num">2</span> How We Use Your Information</h2>
+                <ul>
+                    <li>To provide, maintain, and improve the Eloquent platform and its features.</li>
+                    <li>To process subscriptions, invoices, and customer support requests.</li>
+                    <li>To send service announcements, security alerts, and (with your consent) marketing communications.</li>
+                    <li>To detect, prevent, and respond to fraud, abuse, or security incidents.</li>
+                    <li>To comply with applicable laws and lawful requests from authorities in the UAE.</li>
+                </ul>
+
+                <h2><span class="num">3</span> Data Sharing &amp; Disclosure</h2>
+                <p>We <strong>do not sell</strong> your personal information. We share data only in the limited cases below:</p>
+                <ul>
+                    <li><strong>Service providers:</strong> trusted infrastructure partners (cloud hosting, email delivery, payment processing) under written confidentiality agreements.</li>
+                    <li><strong>Your team:</strong> data inside your workspace is visible to users you authorize, according to the roles and permissions you assign.</li>
+                    <li><strong>Legal compliance:</strong> when required by law, court order, or to protect the rights, safety, or property of Eloquent and its users.</li>
+                    <li><strong>Business transfers:</strong> in the event of a merger, acquisition, or asset sale, with notice to you before your data becomes subject to a different policy.</li>
+                </ul>
+
+                <h2><span class="num">4</span> Data Security</h2>
+                <p>We apply industry-standard safeguards to protect your data:</p>
+                <ul>
+                    <li>SSL/TLS encryption for all data in transit.</li>
+                    <li>Encrypted backups stored daily across geographically separated regions.</li>
+                    <li>Role-based access control (RBAC) and audit logs for sensitive operations.</li>
+                    <li>Regular security reviews and prompt patching of dependencies.</li>
+                </ul>
+                <p>No system is perfectly secure. If we ever detect a breach that affects you, we will notify you and the relevant authorities without undue delay.</p>
+
+                <h2><span class="num">5</span> Data Retention</h2>
+                <p>We retain your account and business data for as long as your subscription is active. After cancellation, data is retained for up to <strong>90 days</strong> to allow for export and reactivation, then permanently deleted from our active systems. Backup copies are purged on our standard rotation cycle (typically within 12 months).</p>
+
+                <h2><span class="num">6</span> Your Rights</h2>
+                <p>Subject to applicable UAE data protection laws, you have the right to:</p>
+                <ul>
+                    <li>Access the personal information we hold about you.</li>
+                    <li>Request correction of inaccurate or incomplete data.</li>
+                    <li>Request deletion of your personal information (subject to legal or contractual retention obligations).</li>
+                    <li>Export your business data in a portable format.</li>
+                    <li>Withdraw consent for marketing communications at any time.</li>
+                </ul>
+                <p>To exercise any of these rights, contact us at <a href="mailto:eloquent.agent@gmail.com">eloquent.agent@gmail.com</a>.</p>
+
+                <h2><span class="num">7</span> Cookies &amp; Tracking</h2>
+                <p>Our website uses essential cookies to keep you signed in and to remember your preferences. We also use limited analytics cookies (such as session counters) to understand which pages perform well. You can disable cookies in your browser settings; some features may not work as expected if you do.</p>
+
+                <h2><span class="num">8</span> Third-Party Services</h2>
+                <p>Our platform may integrate with third-party services you choose to connect (such as payment gateways, mapping providers, or accounting tools). Those services have their own privacy policies, and we encourage you to review them before connecting.</p>
+
+                <h2><span class="num">9</span> Children's Privacy</h2>
+                <p>Eloquent is built for businesses. Our services are not directed to individuals under 18 years of age, and we do not knowingly collect personal information from children.</p>
+
+                <h2><span class="num">10</span> Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make material changes, we will notify you by email or through an in-app announcement at least 14 days before the changes take effect.</p>
+
+                <h2><span class="num">11</span> Contact Us</h2>
+                <p>Questions, requests, or concerns about this policy? We're happy to help.</p>
+
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-center glass rounded-2xl p-5 border border-white/5">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 border border-brand-500/20 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="ph-bold ph-envelope-simple text-2xl"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Email</div>
+                            <a href="mailto:eloquent.agent@gmail.com" class="text-white font-semibold text-sm break-all">eloquent.agent@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center glass rounded-2xl p-5 border border-white/5">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 border border-brand-500/20 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="ph-bold ph-phone text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Phone</div>
+                            <a href="tel:+971557369629" class="text-white font-semibold text-sm">+971 55 736 9629</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-white/10 text-center">
+                    <a href="index.html" class="inline-flex items-center gap-2 text-brand-400 font-semibold hover:text-brand-300 transition">
+                        <i class="ph-bold ph-arrow-left"></i> Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center mb-6 text-white">
+                        <div class="w-8 h-8 bg-brand-400 rounded-lg flex items-center justify-center mr-2 text-slate-900">
+                             <i class="ph-bold ph-asterisk-simple text-lg"></i>
+                        </div>
+                        <span class="font-bold text-xl tracking-tight">Eloquent</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        The operating system for modern business. Sales, Logistics, Finance. One platform.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Product</h4>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li><a href="index.html#services" class="hover:text-brand-500 transition">Sales App</a></li>
+                        <li><a href="index.html#services" class="hover:text-brand-500 transition">Invoicing</a></li>
+                        <li><a href="index.html#services" class="hover:text-brand-500 transition">Map Tracking</a></li>
+                        <li><a href="index.html#services" class="hover:text-brand-500 transition">Quotations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li><a href="index.html" class="hover:text-brand-500 transition">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-brand-500 transition">Careers</a></li>
+                        <li><a href="privacy-policy.html" class="text-brand-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-500 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Stay Updated</h4>
+                    <div class="flex">
+                        <input type="email" placeholder="Email address" class="px-4 py-2 bg-white/5 border border-transparent rounded-l-lg focus:outline-none focus:ring-2 focus:ring-brand-400 w-full text-sm">
+                        <button class="bg-brand-400 px-4 py-2 rounded-r-lg text-slate-900 hover:bg-brand-300 text-sm font-bold transition">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-slate-800 text-center text-sm font-medium">
+                &copy; 2026 Eloquent FZE LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.add('bg-black/70');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.remove('bg-black/70');
+            }
+        });
+    </script>
+</body>
+</html>
